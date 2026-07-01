@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@import "@fontsource/plus-jakarta-sans";
+:root {
+  /* Backgrounds */
+  --background: #050816;
+  --surface: #0d1224;
+  --surface-light: #141b34;
+
+  /* Brand */
+  --primary: #3b82f6;
+  --primary-light: #60a5fa;
+
+  --secondary: #8b5cf6;
+  --secondary-light: #a78bfa;
+
+  /* Text */
+  --foreground: #f8fafc;
+  --muted: #94a3b8;
+
+  /* Misc */
+  --border: rgba(255, 255, 255, 0.08);
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-light: var(--surface-light);
+
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-light: var(--secondary-light);
+
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+
+  --color-border: var(--border);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--foreground);
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(59, 130, 246, 0.15),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(139, 92, 246, 0.15),
+      transparent 40%
+    ),
+    var(--background);
+
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+button {
+  cursor: pointer;
+}
