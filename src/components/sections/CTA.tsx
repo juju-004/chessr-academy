@@ -5,7 +5,7 @@ import Section from "../ui/section";
 export default function CTA() {
   return (
     <Section>
-      <div className="relative overflow-hidden rounded-[40px] border border-white/10 bg-gradient-to-br from-blue-600 via-indigo-600 to-violet-700 px-8 py-24 text-center shadow-[0_25px_80px_rgba(59,130,246,0.35)]">
+      <div className="relative overflow-hidden rounded-[40px] border border-white/10 bg-linear-to-br from-blue-600 via-indigo-600 to-violet-700 px-8 py-24 text-center shadow-[0_25px_80px_rgba(59,130,246,0.35)]">
         <div className="absolute -left-20 top-0 h-72 w-72 rounded-full bg-white/10 blur-[120px]" />
         <div className="absolute -right-20 bottom-0 h-72 w-72 rounded-full bg-white/10 blur-[120px]" />
 

@@ -43,7 +43,7 @@ export default function Journey() {
 
         <h2 className="mx-auto mt-4 max-w-3xl text-5xl font-black">
           Your Journey Starts
-          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent">
             {" "}
             With One Lesson
           </span>
@@ -57,7 +57,7 @@ export default function Journey() {
 
       <div className="relative mt-24">
         {/* Connecting line (desktop) */}
-        <div className="absolute left-0 right-0 top-10 hidden h-px bg-gradient-to-r from-primary/30 via-secondary/40 to-primary/30 lg:block" />
+        <div className="absolute left-0 right-0 top-10 hidden h-px bg-linear-to-r from-primary/30 via-secondary/40 to-primary/30 lg:block" />
 
         <div className="grid gap-10 lg:grid-cols-4">
           {steps.map((step, index) => {
@@ -72,7 +72,7 @@ export default function Journey() {
                 transition={{ delay: index * 0.15 }}
                 className="relative text-center"
               >
-                <div className="relative z-10 mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-primary to-secondary shadow-[0_10px_40px_rgba(59,130,246,0.35)]">
+                <div className="relative z-10 mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-linear-to-br from-primary to-secondary shadow-[0_10px_40px_rgba(59,130,246,0.35)]">
                   <Icon className="h-9 w-9 text-white" />
                 </div>
 

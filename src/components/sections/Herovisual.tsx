@@ -1,12 +1,7 @@
 import { motion } from "framer-motion";
-import FloatingPiece from "../ui/floatingpiece";
 
 // Replace this later with your actual logo
 import logo from "../../assets/bishop.png";
-import rook from "../../assets/rook.png";
-import bishop from "../../assets/bishop.png";
-import knight from "../../assets/knight.png";
-
 export default function HeroVisual() {
   return (
     <div className="relative flex h-150 items-center justify-center overflow-hidden">

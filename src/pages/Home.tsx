@@ -6,7 +6,6 @@ import WhyChessR from "@/components/sections/WhyChessR";
 import Journey from "@/components/sections/Journey";
 import Testimonials from "@/components/sections/Testimonials";
 import FAQ from "@/components/sections/FAQ";
-import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
 
 export default function Home() {

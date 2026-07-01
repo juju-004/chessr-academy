@@ -46,7 +46,7 @@ export default function WhyChessR() {
           <h2 className="mt-4 text-5xl font-black leading-tight">
             More Than Chess Lessons.
             <br />
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent">
               Build Skills for Life.
             </span>
           </h2>
@@ -71,7 +71,7 @@ export default function WhyChessR() {
                 transition={{ delay: index * 0.1 }}
                 className="flex gap-5 rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl"
               >
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-secondary">
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-linear-to-br from-primary to-secondary">
                   <Icon className="h-7 w-7 text-white" />
                 </div>
 
