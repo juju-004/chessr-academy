@@ -71,7 +71,7 @@ export default function Hero() {
 
         {/* Right */}
 
-        <div className=" absolute right-0 opacity-45 lg:opacity-100 translate-x-1/2 lg:translate-x-0 lg:relative flex justify-center">
+        <div className=" absolute right-0 md:flex hidden opacity-45 lg:opacity-100 translate-x-1/2 lg:translate-x-0 lg:relative justify-center">
           <div className="h-125 w-125 overflow-hidden rounded-[40px] border border-white/10 bg-linear-to-br from-surface to-surface-light backdrop-blur-xl shadow-2xl">
             <HeroVisual />
           </div>
