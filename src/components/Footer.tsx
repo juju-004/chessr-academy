@@ -9,7 +9,12 @@ const explore = [
   { href: "#schools", label: "Schools" },
   { href: "#faq", label: "FAQ" },
 ];
-const plans = ["Community", "2 classes / week", "4 classes / week", "4 classes + Community"];
+const plans = [
+  "Community",
+  "2 classes / week",
+  "4 classes / week",
+  "4 classes + Community",
+];
 
 const head = "text-sm font-bold uppercase tracking-widest text-white";
 const link = "text-slate-400 transition-colors hover:text-white";
@@ -23,13 +28,27 @@ export default function Footer() {
           <div className="checker absolute inset-0" aria-hidden />
           <div className="relative flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
             <div className="max-w-xl">
-              <h2 className="text-3xl font-extrabold leading-tight md:text-4xl">Your child's next move starts today.</h2>
-              <p className="mt-3 text-white/85">Book a free 30-minute trial class. No payment needed.</p>
-              <LinkButton href={trialLink()} className="mt-6 bg-white! text-brand! hover:bg-brand-soft!">
+              <h2 className="text-3xl font-extrabold leading-tight md:text-4xl">
+                Your child's next move starts today.
+              </h2>
+              <p className="mt-3 text-white/85">
+                Book a free 30-minute trial class. No payment needed.
+              </p>
+              <LinkButton
+                href={trialLink()}
+                className="mt-6 bg-white! text-white! hover:bg-brand-soft!"
+              >
                 Book a free trial <ArrowRight size={18} aria-hidden />
               </LinkButton>
             </div>
-            <img src={king} alt="" width={360} height={437} loading="lazy" className="hidden h-36 w-auto drop-shadow-xl md:block" />
+            <img
+              src={king}
+              alt=""
+              width={360}
+              height={437}
+              loading="lazy"
+              className="hidden h-36 w-auto drop-shadow-xl md:block"
+            />
           </div>
         </div>
 
@@ -38,7 +57,8 @@ export default function Footer() {
           <div>
             <Brand size="lg" />
             <p className="mt-4 max-w-xs leading-7">
-              Friendly online chess coaching for children, taught by trusted Nigerian coaches.
+              Friendly online chess coaching for children, taught by trusted
+              Nigerian coaches.
             </p>
           </div>
 
@@ -47,7 +67,9 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               {explore.map((l) => (
                 <li key={l.href}>
-                  <a href={l.href} className={link}>{l.label}</a>
+                  <a href={l.href} className={link}>
+                    {l.label}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -58,7 +80,9 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               {plans.map((p) => (
                 <li key={p}>
-                  <a href="#plans" className={link}>{p}</a>
+                  <a href="#plans" className={link}>
+                    {p}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -68,24 +92,36 @@ export default function Footer() {
             <h3 className={head}>Get in touch</h3>
             <ul className="mt-4 space-y-3">
               <li>
-                <a href={trialLink()} target="_blank" rel="noreferrer" className={`${link} flex items-center gap-3`}>
-                  <MessageCircle size={18} className="text-cyan" aria-hidden /> WhatsApp us
+                <a
+                  href={trialLink()}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`${link} flex items-center gap-3`}
+                >
+                  <MessageCircle size={18} className="text-cyan" aria-hidden />{" "}
+                  WhatsApp us
                 </a>
               </li>
               <li>
-                <a href={`mailto:${EMAIL}`} className={`${link} flex items-center gap-3`}>
+                <a
+                  href={`mailto:${EMAIL}`}
+                  className={`${link} flex items-center gap-3`}
+                >
                   <Mail size={18} className="text-cyan" aria-hidden /> {EMAIL}
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <MapPin size={18} className="text-cyan" aria-hidden /> {LOCATION}
+                <MapPin size={18} className="text-cyan" aria-hidden />{" "}
+                {LOCATION}
               </li>
             </ul>
           </div>
         </div>
 
         <div className="flex flex-col gap-2 border-t border-white/10 py-6 text-sm sm:flex-row sm:justify-between">
-          <p>© {new Date().getFullYear()} ChessR Academy. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} ChessR Academy. All rights reserved.
+          </p>
           <p>Made for young chess players everywhere.</p>
         </div>
       </div>
